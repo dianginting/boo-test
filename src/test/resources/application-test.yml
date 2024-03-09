@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: boo-test
+  server:
+    port: -1
+dataSource:
+  url: jdbc:tc:mysql://localhost/test?TC_REUSABLE=true&useUnicode=false
+  driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+  username: test
+  password: test
+  pooled: true
+  jmxExport: false
